@@ -4,6 +4,36 @@
  * ----------------------------
  */
 
+
+ /*
+ *
+ * Bootstrap Overrides
+ *
+ */
+
+ /* Override Bootstrap button color */
+.btn-primary {
+    background-color: black!important;
+    color: white; /* Change text color to white for better contrast */
+    border-color: black!important; /* Change border color if needed */
+
+}
+
+/* Override Bootstrap button color and remove outline */
+.btn.btn-info {
+    background-color: black!important;
+    color: white;
+    border-color: transparent!important; /* Set border color to transparent */
+    outline: none!important; /* Optionally, remove the outline when the button is focused */
+}
+
+
+ /*
+ *-------------------
+ * Regular Code
+ *------------------
+ */
+
  *{
     margin:0;
     padding:0;
@@ -53,33 +83,38 @@ p{
 }
 
 h1,h2,h3,h4,h5,h6{
-    color:#333;
     font-weight:700;
     margin:0;
     line-height:1.2
 }
 
 h1{
+    color:#000;
     font-size:36px
 }
 
 h2{
+    color:#000;
     font-size:30px
 }
 
 h3{
+    color:#333;
     font-size:24px
 }
 
 h4{
+    color:#000;
     font-size:18px
 }
 
 h5{
+    color:#000;
     font-size:15px
 }
 
 h6{
+    color:#000;
     font-size:13px
 }
 
@@ -134,7 +169,7 @@ aside.menu-sidebar.d-none.d-lg-block.clr{
  */
 
 .header-desktop{
-    background:#0da8e4;
+    background:rgb(69, 236, 242);
     -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
@@ -250,7 +285,7 @@ input.au-input.au-input-xl{
 }
 
 .total{
-    background:#205b8d;
+    background:#000;
     line-height:43px;
     color:#fff;
     border-radius:30px;
@@ -283,11 +318,11 @@ input.au-input.au-input-xl{
     right:0;
     min-width:95px;
     color:#fff;
-    border:1px solid #205b8d;
+    border:1px solid #000;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     border-radius:43px;
-    background:#205b8d
+    background:#000
 }
 
 .au-btn-submit:hover{
@@ -319,7 +354,7 @@ input.au-input.au-input-xl{
     left:0;
     top:0;
     bottom:0;
-    background:#fff;
+    background:#000;
     overflow-y:auto
 }
 
@@ -368,7 +403,7 @@ input.au-input.au-input-xl{
 
 .navbar-sidebar .navbar-list li a{
     display:block;
-    color:#555;
+    color:#fff;
     font-size:16px;
     padding:5px 0
 }
@@ -690,7 +725,7 @@ table.table.table-bordered{
     border:1px solid #dee2e6
 }
 table.table.table-bordered th{
-    BACKGROUND:#0da8e4;
+    BACKGROUND:#000;
     color:#fff;
     font-size:14px;
     padding:7px
@@ -770,7 +805,7 @@ footer ul li a{
     color:#fff
 }
 footer{
-    background:#232324;
+    background:#000;
     z-index:1;
     position:relative;
     text-align:center
@@ -827,7 +862,7 @@ footer ul li{
         font-size:22px;
         float:left;
         margin-top:16px;
-        color:#205b8d;
+        color:#000;
         margin-left:15px
     }
     .header-mobile .header-mobile-bar{
@@ -922,7 +957,7 @@ footer ul li{
         font-size:22px;
         float:left;
         margin-top:16px;
-        color:#205b8d;
+        color:#000;
         margin-left:15px
     }
         .header-wrap2{
@@ -973,7 +1008,7 @@ footer ul li{
         font-size:22px;
         float:left;
         margin-top:16px;
-        color:#205b8d;
+        color:#000;
         margin-left:15px
     }
     .footer-pagination{
@@ -992,11 +1027,11 @@ footer ul li{
         right:10px;
         min-width:85px;
         color:#fff;
-        border:1px solid #205b8d;
+        border:1px solid #000;
         -webkit-border-radius:3px;
         -moz-border-radius:3px;
         border-radius:0;
-        background:#205b8d
+        background:#000
     }
     input.au-input.au-input-xl{
         border-radius:0!important;
@@ -1012,7 +1047,7 @@ footer ul li{
         font-size:18px;
         float:left;
         margin-top:16px;
-        color:#03a9f4;
+        color:#000;
         margin-left:15px
     }
     .total span{
@@ -1025,11 +1060,11 @@ footer ul li{
         margin-left:6px
     }
     .total{
-        background:#205b8d;
+        background:#000;
         line-height:30px;
         color:#fff;
         border-radius:30px;
-        border:1px solid #205b8d;
+        border:1px solid #000;
         float:left;
         margin-top:9px;
         padding-left:12px
