@@ -74,8 +74,8 @@ button{
 }
 
 img{
-    max-width:100%;
-    height:auto
+    max-inline-size:100%;
+    block-size:auto
 }
 
 p{
@@ -142,23 +142,23 @@ a,a:hover{
 .page-wrapper{
     overflow:hidden;
     background:#e5e5e5;
-    padding-bottom:8vh
+    padding-block-end:8vh
 }
 
 .page-container{
     background:#e5e5e5;
-    padding-left:200px
+    padding-inline-start:200px
 }
 
 .main-content{
-    padding-top:116px;
-    min-height:100vh
+    padding-block-start:116px;
+    min-block-size:100vh
 }
 
 aside.menu-sidebar.d-none.d-lg-block.clr{
     background:0 0;
     z-index:99999999;
-    height:75px;
+    block-size:75px;
     box-shadow:-2px 0 4px #0000003b
 }
 
@@ -174,19 +174,19 @@ aside.menu-sidebar.d-none.d-lg-block.clr{
     -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     position:fixed;
-    top:0;
-    right:0;
-    left:200px;
-    height:75px;
+    inset-block-start:0;
+    inset-inline-end:0;
+    inset-inline-start:200px;
+    block-size:75px;
     z-index:3
 }
 
 .header-desktop .section-content{
     overflow:visible;
     position:absolute;
-    top:50%;
-    left:0;
-    right:0;
+    inset-block-start:50%;
+    inset-inline-start:0;
+    inset-inline-end:0;
     -webkit-transform:translateY(-50%);
     -moz-transform:translateY(-50%);
     -ms-transform:translateY(-50%);
@@ -249,12 +249,12 @@ section{
 }
 
 .au-input-xl{
-    min-width:935px
+    min-inline-size:935px
 }
 
 input.au-input.au-input-xl{
     border-radius:40px!important;
-    margin-right:15px
+    margin-inline-end:15px
 }
 
 .au-input{
@@ -278,10 +278,10 @@ input.au-input.au-input-xl{
 
 .cart-area i{
     font-size:22px;
-    float:left;
-    margin-top:16px;
+    float:inline-start;
+    margin-block-start:16px;
     color:#fff;
-    margin-left:15px
+    margin-inline-start:15px
 }
 
 .total{
@@ -290,9 +290,9 @@ input.au-input.au-input-xl{
     color:#fff;
     border-radius:30px;
     border:1px solid #0da8e4;
-    float:left;
-    margin-top:7px;
-    padding-left:17px
+    float:inline-start;
+    margin-block-start:7px;
+    padding-inline-start:17px
 }
 
 .total span{
@@ -300,9 +300,9 @@ input.au-input.au-input-xl{
     background:#fff;
     padding:0 13px;
     color:#000;
-    border-top-right-radius:20px;
-    border-bottom-right-radius:20px;
-    margin-left:11px
+    border-start-end-radius:20px;
+    border-end-end-radius:20px;
+    margin-inline-start:11px
 }
 
 .form-header{
@@ -315,8 +315,8 @@ input.au-input.au-input-xl{
 
 .au-btn-submit{
     position:relative;
-    right:0;
-    min-width:95px;
+    inset-inline-end:0;
+    min-inline-size:95px;
     color:#fff;
     border:1px solid #000;
     -webkit-border-radius:3px;
@@ -333,8 +333,8 @@ input.au-input.au-input-xl{
     font-size:20px;
     color:#fff;
     position:absolute;
-    top:50%;
-    left:50%;
+    inset-block-start:50%;
+    inset-inline-start:50%;
     -webkit-transform:translate(-50%,-50%);
     -moz-transform:translate(-50%,-50%);
     -ms-transform:translate(-50%,-50%);
@@ -349,18 +349,18 @@ input.au-input.au-input-xl{
  */
 
 .menu-sidebar{
-    width:200px;
+    inline-size:200px;
     position:fixed;
-    left:0;
-    top:0;
-    bottom:0;
+    inset-inline-start:0;
+    inset-block-start:0;
+    inset-block-end:0;
     background:#000;
     overflow-y:auto
 }
 
 .menu-sidebar .logo{
     background:#fff;
-    height:75px;
+    block-size:75px;
     padding:0 35px;
     display:-webkit-box;
     display:-webkit-flex;
@@ -375,14 +375,14 @@ input.au-input.au-input-xl{
     -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
-    border-right:1px solid #e5e5e5;
+    border-inline-end:1px solid #e5e5e5;
     position:relative;
     z-index:3
 }
 
 .menu-sidebar .navbar-list .navbar-sub-list{
     display:none;
-    padding-left:34px
+    padding-inline-start:34px
 }
 
 .menu-sidebar .navbar-list .navbar-sub-list li a{
@@ -391,14 +391,14 @@ input.au-input.au-input-xl{
 
 .menu-sidebar-content{
     position:relative;
-    height:-webkit-calc(100vh - 75px);
-    height:-moz-calc(100vh - 75px);
-    height:calc(100vh - 75px)
+    block-size:-webkit-calc(100vh - 75px);
+    block-size:-moz-calc(100vh - 75px);
+    block-size:calc(100vh - 75px)
 }
 
 .navbar-sidebar{
     padding:35px;
-    padding-bottom:0
+    padding-block-end:0
 }
 
 .navbar-sidebar .navbar-list li a{
@@ -409,7 +409,7 @@ input.au-input.au-input-xl{
 }
 
 .navbar-sidebar .navbar-list li a i{
-    margin-right:19px
+    margin-inline-end:19px
 }
 
 .navbar-sidebar .navbar-list li a:hover{
@@ -424,9 +424,9 @@ input.au-input.au-input-xl{
 
 .header-mobile{
     position:absolute;
-    top:0;
-    left:0;
-    right:0
+    inset-block-start:0;
+    inset-inline-start:0;
+    inset-inline-end:0
 }
 .header-mobile .header-mobile-bar{
     padding:15px 0;    background: #fff;
@@ -449,8 +449,8 @@ input.au-input.au-input-xl{
     justify-content:space-between
 }
 .header-mobile .hamburger{
-    width:36px;
-    height:36px;
+    inline-size:36px;
+    block-size:36px;
     padding:0;
     line-height:1;
     vertical-align:top;
@@ -472,46 +472,46 @@ input.au-input.au-input-xl{
     align-items:center
 }
 .header-mobile .hamburger .hamburger-box{
-    width:20px;
-    height:15px
+    inline-size:20px;
+    block-size:15px
 }
 .header-mobile .hamburger .hamburger-box .hamburger-inner{
-    width:20px;
-    height:2px;
+    inline-size:20px;
+    block-size:2px;
     -webkit-border-radius:0;
     -moz-border-radius:0;
     border-radius:0
 }
 .header-mobile .hamburger .hamburger-box .hamburger-inner:before{
-    width:20px;
-    height:2px;
-    top:6px
+    inline-size:20px;
+    block-size:2px;
+    inset-block-start:6px
 }
 .header-mobile .hamburger .hamburger-box .hamburger-inner:after{
-    top:12px;
-    width:20px;
-    height:2px
+    inset-block-start:12px;
+    inline-size:20px;
+    block-size:2px
 }
 .header-mobile .navbar-mobile{
     display:none;
     position:absolute;
-    width:100%;
-    top:88px;
+    inline-size:100%;
+    inset-block-start:88px;
     z-index:20
 }
 .header-mobile .navbar-mobile .navbar-mobile-list{
     background:#f8f8f8
 }
 .header-mobile .navbar-mobile .navbar-mobile-list>li>a{
-    padding-left:15px!important
+    padding-inline-start:15px!important
 }
 .header-mobile .navbar-mobile .navbar-mobile-list li a{
     color:#555;
     display:block;
     padding:10px 15px;
-    padding-right:25px;
-    padding-left:0;
-    border-bottom:1px solid #e6e6e6;
+    padding-inline-end:25px;
+    padding-inline-start:0;
+    border-block-end:1px solid #e6e6e6;
     text-transform:capitalize;
     line-height:inherit
 }
@@ -519,22 +519,22 @@ input.au-input.au-input-xl{
     color:#0da8e4
 }
 .header-mobile .navbar-mobile .navbar-mobile-list li a>i{
-    margin-right:19px
+    margin-inline-end:19px
 }
 .navbar-mobile-sub-list{
     display:none;
-    padding-left:30px;
+    padding-inline-start:30px;
     background:#fff
 }
 .header-mobile .navbar-mobile .navbar-mobile-sub-list li a{
-    padding-left:15px
+    padding-inline-start:15px
 }
 .header-mobile-2{
     background:#393939;
     position:static
 }
 .header-mobile-2.header-mobile .navbar-mobile{
-    top:82px
+    inset-block-start:82px
 }
 .header-mobile-2.header-mobile .hamburger{
     background:0 0
@@ -559,20 +559,20 @@ input.au-input.au-input-xl{
  */
 
 .product-box img {
-    width: 150px;
+    inline-size: 150px;
 }
 
 .items select {
-    width: 100px;
-    height: 40px;
+    inline-size: 100px;
+    block-size: 40px;
     border-radius: 40px;
-    padding-left: 15px;
-    margin-bottom: 10px;
+    padding-inline-start: 15px;
+    margin-block-end: 10px;
     outline: 0;
-    margin-left: 5px;
+    margin-inline-start: 5px;
 }
 .product-box{
-    margin-bottom:60px
+    margin-block-end:60px
 }
 .price{
     margin:15px 0 0;
@@ -581,15 +581,15 @@ input.au-input.au-input-xl{
 }
 .product-box h1{
     font-size:18px;
-    border-bottom:1px solid #ccc;
-    padding-bottom:5px;
+    border-block-end:1px solid #ccc;
+    padding-block-end:5px;
     font-weight:600;
-    padding-top:12px;
-    margin-bottom:7px
+    padding-block-start:12px;
+    margin-block-end:7px
 }
 .product-box h2{
     font-size:15px;
-    padding-bottom:0;
+    padding-block-end:0;
     font-weight:500;
     color:#585858
 }
@@ -603,14 +603,14 @@ input.au-input.au-input-xl{
 .form-area{
     background:#e5e5e5;
     position:relative;
-    margin-bottom:45px;
+    margin-block-end:45px;
     padding:50px 20px;
     border:3px solid #ccc
 }
 .form-area h3{
     position:absolute;
-    top:-26px;
-    left:13px;
+    inset-block-start:-26px;
+    inset-inline-start:13px;
     background:#e5e5e5;
     padding:10px 20px;
     font-weight:500;
@@ -618,24 +618,24 @@ input.au-input.au-input-xl{
     display:inline-block
 }
 .input-space{
-    margin-bottom:20px
+    margin-block-end:20px
 }
 .input-space label{
-    padding-left:31px;
+    padding-inline-start:31px;
     font-size:14px;
-    margin-bottom:50px
+    margin-block-end:50px
 }
 .input-space input[type=text]{
-    width:100%;
-    height:40px;
+    inline-size:100%;
+    block-size:40px;
     border-radius:30px;
     outline:0;
     padding:10px;
     border:1px solid #ccc
 }
 .input-space select{
-    width:100%;
-    height:40px;
+    inline-size:100%;
+    block-size:40px;
     border-radius:30px;
     outline:0;
     padding:0 10px;
@@ -658,10 +658,10 @@ input.au-input.au-input-xl{
 }
 .au-checkmark{
     position:absolute;
-    top:0;
-    left:0;
-    height:22px;
-    width:22px;
+    inset-block-start:0;
+    inset-inline-start:0;
+    block-size:22px;
+    inline-size:22px;
     background-color:#fff!important;
     border:2px solid #e5e5e5;
     -webkit-border-radius:2px;
@@ -683,13 +683,13 @@ input.au-input.au-input-xl{
     display:block
 }
 label.date{
-    padding-top:8px
+    padding-block-start:8px
 }
 .au-checkbox .au-checkmark:after{
-    left:5px;
-    top:-1px;
-    width:9px;
-    height:15px;
+    inset-inline-start:5px;
+    inset-block-start:-1px;
+    inline-size:9px;
+    block-size:15px;
     border:solid #0da8e4;
     border-width:0 4px 4px 0;
     -webkit-border-radius:2px;
@@ -731,16 +731,16 @@ table.table.table-bordered th{
     padding:7px
 }
 .table-responsive{
-    padding-right:1px
+    padding-inline-end:1px
 }
 .items select{
-    width:100px;
-    height:40px;
+    inline-size:100px;
+    block-size:40px;
     border-radius:40px;
-    padding-left:15px;
-    margin-bottom:10px;
+    padding-inline-start:15px;
+    margin-block-end:10px;
     outline:0;
-    margin-left:5px
+    margin-inline-start:5px
 }
 
 /* 
@@ -756,11 +756,11 @@ table.table.table-bordered th{
 }
 
 .detail-section{
-    margin-top:60px
+    margin-block-start:60px
 }
 
 .detail-img{
-    width: 30%;
+    inline-size: 30%;
 }
 
 /**/
@@ -784,7 +784,7 @@ a.primary-btn{
     color:#fff;
     border-radius:2px;
     font-size:14px;
-    margin-top:5px
+    margin-block-start:5px
 }
 a.primary-btn:hover{
     background:#0da8e4;
@@ -826,44 +826,44 @@ footer ul li{
  * ----------------------------
  */
 
-@media (max-width:1600px){
+@media (max-inline-size:1600px){
     .au-input-xl{
-        min-width:290px
+        min-inline-size:290px
     }
 }
-@media (max-width:1315px) and (min-width:992px){
+@media (max-inline-size:1315px) and (min-inline-size:992px){
     .header-desktop3 .section-content{
         padding:0 15px
     }
 }
-@media (max-width:1570px) and (min-width:992px){
+@media (max-inline-size:1570px) and (min-inline-size:992px){
     .header-navbar ul li a{
         padding:25px 15px
     }
 }
-@media (max-width:1315px) and (min-width:992px){
+@media (max-inline-size:1315px) and (min-inline-size:992px){
     .header-navbar ul li a{
         font-size:13px;
         padding:27px 15px
     }
     .header-navbar ul li a i{
-        margin-right:5px
+        margin-inline-end:5px
     }
 }
 
-@media (min-width:1200px){
+@media (min-inline-size:1200px){
     .container{
-        max-width:1320px
+        max-inline-size:1320px
     }
 }
 
-@media (min-width:992px) and (max-width:1199px){
+@media (min-inline-size:992px) and (max-inline-size:1199px){
     .cart-area i{
         font-size:22px;
-        float:left;
-        margin-top:16px;
+        float:inline-start;
+        margin-block-start:16px;
         color:#000;
-        margin-left:15px
+        margin-inline-start:15px
     }
     .header-mobile .header-mobile-bar{
         padding:10px 0;
@@ -875,22 +875,22 @@ footer ul li{
 }
 
 
-@media (max-width:991px){
+@media (max-inline-size:991px){
      .section-content-p30{
         padding:0
     }
     .page-container{
         position:relative;
-        top:88px;
-        padding-left:0
+        inset-block-start:88px;
+        padding-inline-start:0
     }
      .page-wrapper{
         background:#e5e5e5;
-        padding-bottom:12vh
+        padding-block-end:12vh
     }
      .main-content{
-        padding-top:50px;
-        padding-bottom:100px
+        padding-block-start:50px;
+        padding-block-end:100px
     }
      .cart-area.d-n{
         display:none
@@ -903,16 +903,16 @@ footer ul li{
         justify-content:center
     }
      .au-input-xl{
-        min-width:350px
+        min-inline-size:350px
     }
       .logo{
         text-align:center
     }
     .header-desktop{
         position:relative;
-        top:0;
-        left:0;
-        height:80px
+        inset-block-start:0;
+        inset-inline-start:0;
+        block-size:80px
     }
     .header-wrap{
         -webkit-box-orient:vertical;
@@ -924,8 +924,8 @@ footer ul li{
         flex-direction:column
     }
     .header-button{
-        margin-top:30px;
-        width:100%;
+        margin-block-start:30px;
+        inline-size:100%;
         -webkit-box-pack:justify;
         -webkit-justify-content:space-between;
         -moz-box-pack:justify;
@@ -933,32 +933,32 @@ footer ul li{
         justify-content:space-between
     }
     .menu-sidebar2{
-        top:0;
-        right:-300px;
-        left:auto;
+        inset-block-start:0;
+        inset-inline-end:-300px;
+        inset-inline-start:auto;
         -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,.1);
         -moz-box-shadow:0 5px 10px 0 rgba(0,0,0,.1);
         box-shadow:0 5px 10px 0 rgba(0,0,0,.1)
     }
      .header-desktop2{
-        left:0;
+        inset-inline-start:0;
         position:relative
     }
      .header-desktop4{
         position:static
     }
      .section-content.section-content-p30.e-spc{
-        padding-top:100px
+        padding-block-start:100px
     }
     header.header-desktop.extra{
-        top:93px!important
+        inset-block-start:93px!important
     }
     .cart-area i{
         font-size:22px;
-        float:left;
-        margin-top:16px;
+        float:inline-start;
+        margin-block-start:16px;
         color:#000;
-        margin-left:15px
+        margin-inline-start:15px
     }
         .header-wrap2{
         -webkit-box-pack:justify;
@@ -970,13 +970,13 @@ footer ul li{
 }
 
 
-@media (max-width:767px){
+@media (max-inline-size:767px){
       .au-input-xl{
-        min-width:150px
+        min-inline-size:150px
     }
     .header-button-item{
         font-size:22px;
-        margin-right:15px
+        margin-inline-end:15px
     }
         .main-content.page-m{
         padding:10% 0!important
@@ -984,32 +984,32 @@ footer ul li{
     .header-mobile .navbar-mobile{
         display:none;
         position:absolute;
-        width:100%;
-        top:66px;
+        inline-size:100%;
+        inset-block-start:66px;
         z-index:20
     }
     .section-content.section-content-p30.e-spc{
-        padding-top:100px
+        padding-block-start:100px
     }
     header.header-desktop.extra{
-        top:64px!important
+        inset-block-start:64px!important
     }
     .header-desktop{
         position:relative;
-        top:0;
-        left:0;
-        height:80px
+        inset-block-start:0;
+        inset-inline-start:0;
+        block-size:80px
     }
     a.logo img{
-        width:110px
+        inline-size:110px
     }
 
     .cart-area i{
         font-size:22px;
-        float:left;
-        margin-top:16px;
+        float:inline-start;
+        margin-block-start:16px;
         color:#000;
-        margin-left:15px
+        margin-inline-start:15px
     }
     .footer-pagination{
         text-align:center
@@ -1019,13 +1019,13 @@ footer ul li{
     }
     .page-container{
         position:relative;
-        top:66px;
-        padding-left:0
+        inset-block-start:66px;
+        padding-inline-start:0
     }
     .au-btn-submit{
         position:relative;
-        right:10px;
-        min-width:85px;
+        inset-inline-end:10px;
+        min-inline-size:85px;
         color:#fff;
         border:1px solid #000;
         -webkit-border-radius:3px;
@@ -1035,7 +1035,7 @@ footer ul li{
     }
     input.au-input.au-input-xl{
         border-radius:0!important;
-        margin-right:0
+        margin-inline-end:0
     }
     .cart-area.d-b{
         display:block
@@ -1045,19 +1045,19 @@ footer ul li{
     }
     .cart-area i{
         font-size:18px;
-        float:left;
-        margin-top:16px;
+        float:inline-start;
+        margin-block-start:16px;
         color:#000;
-        margin-left:15px
+        margin-inline-start:15px
     }
     .total span{
         display:inline-block;
         background:#fff;
         padding:0 10px;
         color:#000;
-        border-top-right-radius:20px;
-        border-bottom-right-radius:20px;
-        margin-left:6px
+        border-start-end-radius:20px;
+        border-end-end-radius:20px;
+        margin-inline-start:6px
     }
     .total{
         background:#000;
@@ -1065,9 +1065,9 @@ footer ul li{
         color:#fff;
         border-radius:30px;
         border:1px solid #000;
-        float:left;
-        margin-top:9px;
-        padding-left:12px
+        float:inline-start;
+        margin-block-start:9px;
+        padding-inline-start:12px
     }
     .header-mobile .header-mobile-bar{
         padding:6px 0;
